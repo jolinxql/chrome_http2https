@@ -1,0 +1,18 @@
+{
+  "name": "Page Redder",
+  "description": "Make the current page red",
+  "version": "2.0",
+  "permissions": [
+    "tabs", "http://*/*","https://*/*","activeTab", "file://*", "http://localhost/*"
+  ],
+  "background": {
+    "scripts": ["inject.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "mouse tracker",
+    "default_icon": "icon.png"
+  },
+  "manifest_version": 2
+}
+//default_popup和background.scripts不能同时存在
